@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Sushil Sharma has vast experience in website designing, development, and optimization, and is also proficient in WordPress. I am in charge of testing and maintaining the applications and websites I develop, as well as the documentation that goes with them." />
-  <meta name="author" content="Sushil Sharma" />
-  <meta name="keywords"
-    content="HTML, CSS, Portfolio, Github, Github pages, Freelancer, Website Developement, JavaScript, PHP, Developer, Tailwind, Bootstrap, VSCode" />
-  <title>Congratulations | Sushil Sharma</title>
+  <title>Congratulations | Melly Kabi Mwangi</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
   <main>
     <section class="text-gray-600 body-font relative">
       <div class="absolute inset-0 bg-gray-300">
-    <img alt="celebrate" class="w-full h-full object-cover object-center rounded-lg lg:w-screen lg:h-screen"
-      src="https://source.unsplash.com/1024x768/?birthday"
-      style="filter: grayscale(1) contrast(1.2) opacity(0.4);">
-  </div>
+        <img alt="celebrate" class="w-full h-full object-cover object-center rounded-lg lg:w-screen lg:h-screen"
+          src="assets/json/Photo.jpeg"
+          style="filter: grayscale(1) contrast(1.2) opacity(0.4);">
+      </div>
       <div class="container px-5 py-24 mx-auto flex">
         <div
           class="lg:w-1/3 md:w-1/2 bg-gray-900 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-          <h2 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-yellow-300">Congratulations</h2>
+          <h2 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-yellow-300">Congratulations Baby</h2>
           <p class="leading-relaxed mb-5 text-gray-300">Your actions have not gone unnoticed, and you inspire those
             around you to be better.</p>
           <div class="relative mb-4">
-            <h2 class="leading-7 text-sm text-gray-300">Tolerance is accepting people who are different from you or
-              putting
-              up with things you don't like. Being a tolerant person isn't easy.
-              It's OK to keep to your own principles, but it's also a good idea to
-              review them, especially if they have an impact on others. It must be
-              apparent that everyone has their own beliefs and ideas, which must
-              be respected and appreciated. Tolerance is the only option if we
-              want to live in a peaceful society.</h2>
+            <p class="leading-7 text-sm text-gray-300">I know it hasn't been easy. The sleepless nights and early
+              mornings to study for exams. The sacrifices you've made to get to this point. The tears you've shed when
+              you thought you couldn't go on. But you did it. You persevered. You overcame. And now, you're here.
+              You've made it. And I couldn't be more proud of you. Congratulations on your graduation. You deserve all
+              the success and happiness in the world. I love you.
+            </p>
           </div>
-          <button class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg" onclick="displayBirthdayMessage()">😍🥰😍</button>
-          <p class="text-xs text-gray-300 mt-3">Your kindness, generosity, and empathy are qualities to be celebrated
-            and emulated.</p>
+          <!-- Button to trigger balloons popping -->
+            <button class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg" onclick="popBalloons()">😍🥰😍</button>
+          <!-- Container for balloons -->
+          <div id="balloons"></div>
         </div>
       </div>
     </section>
   </main>
+  <!-- Your JavaScript file -->
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
