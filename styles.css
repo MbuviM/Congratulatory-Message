@@ -1,12 +1,11 @@
 /* CSS for balloons */
-/* CSS for balloons */
 .balloon {
     width: 40px; /* Adjust the width as needed */
     height: 60px; /* Adjust the height as needed */
     background-color: red; /* Balloon color */
     border-radius: 50%; /* Circle shape */
     position: absolute;
-    bottom: 0; /* Initial position at the bottom */
+    top: 0; /* Position at the top of the screen */
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer; /* Show pointer cursor on hover */
@@ -17,15 +16,15 @@
   /* Keyframes for popping animation */
   @keyframes pop {
     0% {
-      transform: translateX(-50%) scale(1); /* Initial position and size */
+      transform: translateX(-50%) translateY(0) scale(1); /* Initial position and size */
       opacity: 1; /* Initial opacity */
     }
     50% {
-      transform: translateX(-50%) scale(1.5); /* Scale up halfway */
+      transform: translateX(-50%) translateY(-50vh) scale(1.5); /* Move up halfway and scale up */
       opacity: 1; /* Maintain opacity */
     }
     100% {
-      transform: translateX(-50%) scale(0); /* Scale down to 0 size */
+      transform: translateX(-50%) translateY(-100vh) scale(0); /* Move up to the top and scale down to 0 size */
       opacity: 0; /* Fade out */
     }
   }
